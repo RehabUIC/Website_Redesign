@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Rehab Uddin Shawon</title>
+  <meta name="description" content="Research, simulation and real-time graphics projects by Rehab Uddin Shawon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="index.html">Rehab Uddin Shawon</a>
+    <div class="nav-links">
+      <a href="index.html#research">Research</a>
+      <a class="active" href="projects.html" aria-current="page">Projects</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#experience">Experience</a>
+      <a class="btn-small" href="assets/cv/Shawon_CV.pdf">CV</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<div class="container">
+
+  <section class="page-head">
+    <div class="eyebrow">Projects</div>
+    <h1>Research, simulation &amp; real-time graphics</h1>
+    <p>Every system here was built from scratch: no pre-authored animations, physics driven by my own code.</p>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="filter-btn" data-filter="research" aria-pressed="false">Research</button>
+      <button type="button" class="filter-btn" data-filter="simulation" aria-pressed="false">Simulation</button>
+      <button type="button" class="filter-btn" data-filter="graphics" aria-pressed="false">Graphics</button>
+      <button type="button" class="filter-btn" data-filter="techart" aria-pressed="false">Tech art &amp; teaching</button>
+    </div>
+  </section>
+
+  <!--
+    HOW TO ADD MEDIA TO A CARD
+    Replace a card's <div class="placeholder">…</div> with ONE of:
+      GIF/image:  <img src="assets/img/rollsort.gif" alt="Roll Sort gameplay" loading="lazy">
+      MP4 video:  <video src="assets/video/rollsort.mp4" autoplay muted loop playsinline></video>
+      YouTube:    <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Roll Sort gameplay" loading="lazy" allowfullscreen></iframe>
+    HOW TO ADD A PROJECT
+    Copy one <article> … </article> block and edit it. data-category must be:
+    research | simulation | graphics | techart
+  -->
+  <section style="padding-top: 16px; padding-bottom: 96px">
+    <div class="grid-3" id="project-grid">
+
+      <article class="card" data-category="research">
+        <div class="card-media"><div class="placeholder">GIF: CAVE setup</div></div>
+        <div class="card-body">
+          <span class="card-cat">RESEARCH</span>
+          <h3>Stereo CAVE-style visualization</h3>
+          <p>Three-display stereoscopic environment with face tracking and hand gestures for exploring scientific data.</p>
+          <div class="tags"><span>Unity</span><span>Stereo</span><span>Head tracking</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="research">
+        <div class="card-media"><div class="placeholder">GIF: synced screens</div></div>
+        <div class="card-body">
+          <span class="card-cat">RESEARCH</span>
+          <h3>Scene3D multi-display viewer</h3>
+          <p>A master web page drives synchronized cameras across many screens and networks.</p>
+          <div class="tags"><span>WebGL</span><span>Networking</span><span>Sync</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="research">
+        <div class="card-media"><div class="placeholder">Video: PEIM demo</div></div>
+        <div class="card-body">
+          <span class="card-cat">RESEARCH</span>
+          <h3>PEIM: explainable MARL</h3>
+          <p>Real-time explanations of agent decisions, revealing human-like tactics in StarCraft II.</p>
+          <div class="tags"><span>XAI</span><span>MARL</span><span>Visual analytics</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="research">
+        <div class="card-media"><div class="placeholder">Video: robot teams</div></div>
+        <div class="card-body">
+          <span class="card-cat">RESEARCH</span>
+          <h3>Scalable heterogeneous robots</h3>
+          <p>A priority-aware grid sensor scales one shared policy to ten robot types and unseen tasks.</p>
+          <div class="tags"><span>MARL</span><span>PPO</span><span>ML-Agents</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="simulation">
+        <div class="card-media"><div class="placeholder">Gameplay video</div></div>
+        <div class="card-body">
+          <span class="card-cat">SIMULATION</span>
+          <h3>Roll Sort: procedural soft bodies</h3>
+          <p>Every roll is generated in code: mesh, skeleton and joint network, with distance-based skin weights.</p>
+          <div class="tags"><span>Soft-body</span><span>Skinning</span><span>Procedural mesh</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="simulation">
+        <div class="card-media"><div class="placeholder">Gameplay video</div></div>
+        <div class="card-body">
+          <span class="card-cat">SIMULATION</span>
+          <h3>Wrap N Peel: cloth to mesh</h3>
+          <p>Cloth simulation baked into a conforming mesh, real-time normal-map smoothing and mask-based trimming.</p>
+          <div class="tags"><span>Cloth</span><span>Normal maps</span><span>Shaders</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="simulation">
+        <div class="card-media"><div class="placeholder">Gameplay video</div></div>
+        <div class="card-body">
+          <span class="card-cat">SIMULATION</span>
+          <h3>Offroad Rally: assisted driving</h3>
+          <p>Custom vehicle physics with manual, AI and blended assisted driving that keeps player agency.</p>
+          <div class="tags"><span>Vehicle physics</span><span>Game AI</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="simulation">
+        <div class="card-media"><div class="placeholder">Video: bike physics</div></div>
+        <div class="card-body">
+          <span class="card-cat">SIMULATION</span>
+          <h3>Motorcycle physics R&amp;D</h3>
+          <p>Simplified bike dynamics with suspension that keeps the physical detail and the feel of maneuvering. About 970 reactions on LinkedIn.</p>
+          <div class="tags"><span>Vehicle dynamics</span><span>Unity</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="simulation">
+        <div class="card-media"><div class="placeholder">Video: spring wheels</div></div>
+        <div class="card-body">
+          <span class="card-cat">SIMULATION</span>
+          <h3>Raycast spring wheel system</h3>
+          <p>Custom wheels that sense ground distance and apply levitation forces, with no Wheel Collider or spring joints.</p>
+          <div class="tags"><span>Raycasting</span><span>Vehicle physics</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="graphics">
+        <div class="card-media"><div class="placeholder">Video: mesh grinding</div></div>
+        <div class="card-body">
+          <span class="card-cat">GRAPHICS</span>
+          <h3>Runtime mesh grinding</h3>
+          <p>Cuts and grinds high-poly meshes at runtime while holding 60 fps, with particle feedback.</p>
+          <div class="tags"><span>Mesh processing</span><span>Optimization</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="graphics">
+        <div class="card-media"><div class="placeholder">Gameplay video</div></div>
+        <div class="card-body">
+          <span class="card-cat">GRAPHICS</span>
+          <h3>Airbrush Snapback: paint on 3D</h3>
+          <p>Raycast-to-UV painting with flow, radius and stencil masks applied through a custom shader.</p>
+          <div class="tags"><span>Texture painting</span><span>HLSL</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="graphics">
+        <div class="card-media"><div class="placeholder">Gameplay video</div></div>
+        <div class="card-body">
+          <span class="card-cat">GRAPHICS</span>
+          <h3>Fruitful Plucking: living trees</h3>
+          <p>Rig-inspired hierarchical physics: tension travels through branches and releases on pluck.</p>
+          <div class="tags"><span>Custom physics</span><span>Procedural geometry</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="graphics">
+        <div class="card-media"><div class="placeholder">Demo video</div></div>
+        <div class="card-body">
+          <span class="card-cat">GRAPHICS</span>
+          <h3>Procedural cities &amp; roads</h3>
+          <p>Modular generation of roads, bridges and full city layouts for game levels.</p>
+          <div class="tags"><span>PCG</span><span>Level generation</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="techart">
+        <div class="card-media"><div class="placeholder">Rig demo video</div></div>
+        <div class="card-body">
+          <span class="card-cat">TECH ART &amp; TEACHING</span>
+          <h3>Custom facial rig (Maya)</h3>
+          <p>Bones plus blend shapes driven by a minimal set of animator-friendly controls.</p>
+          <div class="tags"><span>Rigging</span><span>Animation</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="techart">
+        <div class="card-media"><div class="placeholder">Tutorial thumbnail</div></div>
+        <div class="card-body">
+          <span class="card-cat">TECH ART &amp; TEACHING</span>
+          <h3>3D modeling tutorials in Bengali</h3>
+          <p>A Maya tutorial series created to fill a gap in quality Bengali-language learning material.</p>
+          <div class="tags"><span>Teaching</span><span>Maya</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h2>Let's build something immersive.</h2>
+      <p>Seeking Summer 2027 research or engineering internships in XR, graphics and applied AI.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="mailto:rshaw610@uic.edu">rshaw610@uic.edu</a>
+      <a class="btn" href="https://www.linkedin.com/in/rushawon/">LinkedIn</a>
+    </div>
+  </div>
+  <div class="copyright">© 2026 Rehab Uddin Shawon</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
